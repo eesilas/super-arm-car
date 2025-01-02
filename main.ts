@@ -1,3 +1,21 @@
+function base () {
+    basic.clearScreen()
+    led.plot(0, 3)
+    SuperBit.Servo(SuperBit.enServo.S5, 70)
+    basic.pause(1000)
+    led.plot(1, 3)
+    SuperBit.Servo(SuperBit.enServo.S5, 60)
+    basic.pause(1000)
+    led.plot(2, 3)
+    SuperBit.Servo(SuperBit.enServo.S5, 50)
+    basic.pause(1000)
+    led.plot(2, 3)
+    SuperBit.Servo(SuperBit.enServo.S5, 40)
+    basic.pause(1000)
+    led.plot(2, 3)
+    SuperBit.Servo(SuperBit.enServo.S5, 30)
+    basic.pause(1000)
+}
 function elbow () {
     basic.clearScreen()
     led.plot(0, 2)
@@ -49,21 +67,30 @@ function wrist () {
     SuperBit.Servo(SuperBit.enServo.S8, 90)
     basic.pause(1000)
 }
+let range = SuperBit.RGB_Program().range(0, 3)
+basic.showLeds(`
+    . # . # .
+    . # . # .
+    . . # . .
+    . . # . .
+    . . # . .
+    `)
+basic.pause(100)
+basic.showLeds(`
+    # . . . #
+    . # . # .
+    . . # . .
+    . . # . .
+    . . # . .
+    `)
+basic.pause(500)
+basic.showLeds(`
+    . # . # .
+    . # . # .
+    . . # . .
+    . . # . .
+    . . # . .
+    `)
 basic.forever(function () {
-    basic.clearScreen()
-    led.plot(0, 3)
-    SuperBit.Servo(SuperBit.enServo.S5, 70)
-    basic.pause(1000)
-    led.plot(1, 3)
-    SuperBit.Servo(SuperBit.enServo.S5, 60)
-    basic.pause(1000)
-    led.plot(2, 3)
-    SuperBit.Servo(SuperBit.enServo.S5, 50)
-    basic.pause(1000)
-    led.plot(2, 3)
-    SuperBit.Servo(SuperBit.enServo.S5, 40)
-    basic.pause(1000)
-    led.plot(2, 3)
-    SuperBit.Servo(SuperBit.enServo.S5, 30)
-    basic.pause(1000)
+	
 })
