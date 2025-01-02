@@ -52,5 +52,5 @@ function wrist () {
 basic.showString("X")
 basic.clearScreen()
 basic.forever(function () {
-    elbow()
+    frontarm()
 })
