@@ -49,8 +49,15 @@ function wrist () {
     SuperBit.Servo(SuperBit.enServo.S8, 90)
     basic.pause(1000)
 }
-basic.showString("X")
-basic.clearScreen()
 basic.forever(function () {
-    frontarm()
+    basic.clearScreen()
+    led.plot(0, 3)
+    SuperBit.Servo(SuperBit.enServo.S5, 90)
+    basic.pause(1000)
+    led.plot(1, 3)
+    SuperBit.Servo(SuperBit.enServo.S5, 100)
+    basic.pause(1000)
+    led.plot(2, 3)
+    SuperBit.Servo(SuperBit.enServo.S5, 110)
+    basic.pause(1000)
 })
