@@ -79,7 +79,7 @@ function wrist () {
 function wristh () {
     basic.clearScreen()
     led.plot(0, 2)
-    SuperBit.Servo(SuperBit.enServo.S2, 180)
+    SuperBit.Servo(SuperBit.enServo.S2, 165)
     basic.pause(1000)
     led.plot(1, 2)
     SuperBit.Servo(SuperBit.enServo.S2, 150)
@@ -113,7 +113,5 @@ basic.forever(function () {
     wristh()
     basic.pause(2000)
     wristv()
-    basic.pause(2000)
-    clamp()
     basic.pause(2000)
 })
