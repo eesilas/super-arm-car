@@ -100,7 +100,9 @@ basic.pause(100)
 SuperBit.Servo(SuperBit.enServo.S3, 90)
 SuperBit.Servo(SuperBit.enServo.S2, 30)
 basic.forever(function () {
-    elbow()
+    for (let index = 0; index <= 120; index++) {
+        SuperBit.Servo(SuperBit.enServo.S6, index)
+    }
     basic.showIcon(IconNames.Duck)
-    basic.pause(5000)
+    basic.pause(2000)
 })
