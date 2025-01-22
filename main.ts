@@ -1,3 +1,9 @@
+function clamp () {
+    for (let index = 0; index <= 180; index++) {
+        SuperBit.Servo(SuperBit.enServo.S6, index)
+        basic.pause(100)
+    }
+}
 function wristv () {
     basic.clearScreen()
     led.plot(0, 0)
@@ -100,8 +106,6 @@ basic.pause(100)
 SuperBit.Servo(SuperBit.enServo.S3, 90)
 SuperBit.Servo(SuperBit.enServo.S2, 30)
 basic.forever(function () {
-    for (let index = 0; index <= 180; index++) {
-        SuperBit.Servo(SuperBit.enServo.S6, index)
-        basic.pause(100)
-    }
+    wristh()
+    basic.pause(2000)
 })
