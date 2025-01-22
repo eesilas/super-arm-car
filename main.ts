@@ -16,19 +16,19 @@ function wristv () {
 function base () {
     basic.clearScreen()
     led.plot(0, 3)
-    SuperBit.Servo(SuperBit.enServo.S1, 70)
+    SuperBit.Servo(SuperBit.enServo.S3, 50)
     basic.pause(1000)
     led.plot(1, 3)
-    SuperBit.Servo(SuperBit.enServo.S5, 60)
+    SuperBit.Servo(SuperBit.enServo.S3, 40)
     basic.pause(1000)
     led.plot(2, 3)
-    SuperBit.Servo(SuperBit.enServo.S5, 50)
+    SuperBit.Servo(SuperBit.enServo.S3, 30)
     basic.pause(1000)
     led.plot(2, 3)
-    SuperBit.Servo(SuperBit.enServo.S5, 40)
+    SuperBit.Servo(SuperBit.enServo.S3, 20)
     basic.pause(1000)
     led.plot(2, 3)
-    SuperBit.Servo(SuperBit.enServo.S5, 30)
+    SuperBit.Servo(SuperBit.enServo.S3, 10)
     basic.pause(1000)
 }
 function elbow () {
@@ -95,7 +95,7 @@ basic.showLeds(`
     . . # . .
     `)
 basic.forever(function () {
-    elbow()
+    base()
     basic.showIcon(IconNames.Duck)
     basic.pause(5000)
 })
