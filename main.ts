@@ -1,3 +1,18 @@
+function wristv () {
+    basic.clearScreen()
+    led.plot(0, 0)
+    SuperBit.Servo(SuperBit.enServo.S5, 0)
+    basic.pause(1000)
+    led.plot(1, 0)
+    SuperBit.Servo(SuperBit.enServo.S5, 90)
+    basic.pause(1000)
+    led.plot(2, 0)
+    SuperBit.Servo(SuperBit.enServo.S5, 180)
+    basic.pause(1000)
+    led.plot(3, 0)
+    SuperBit.Servo(SuperBit.enServo.S5, 90)
+    basic.pause(1000)
+}
 function base () {
     basic.clearScreen()
     led.plot(0, 3)
@@ -14,21 +29,6 @@ function base () {
     basic.pause(1000)
     led.plot(2, 3)
     SuperBit.Servo(SuperBit.enServo.S5, 30)
-    basic.pause(1000)
-}
-function wrist_ver () {
-    basic.clearScreen()
-    led.plot(0, 0)
-    SuperBit.Servo(SuperBit.enServo.S5, 0)
-    basic.pause(1000)
-    led.plot(1, 0)
-    SuperBit.Servo(SuperBit.enServo.S5, 90)
-    basic.pause(1000)
-    led.plot(2, 0)
-    SuperBit.Servo(SuperBit.enServo.S5, 180)
-    basic.pause(1000)
-    led.plot(3, 0)
-    SuperBit.Servo(SuperBit.enServo.S5, 90)
     basic.pause(1000)
 }
 function elbow () {
@@ -95,7 +95,7 @@ basic.showLeds(`
     . . # . .
     `)
 basic.forever(function () {
-    wrist_ver()
+    wristv()
     basic.showIcon(IconNames.Duck)
     basic.pause(5000)
 })
