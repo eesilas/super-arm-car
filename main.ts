@@ -102,7 +102,6 @@ SuperBit.Servo(SuperBit.enServo.S2, 30)
 basic.forever(function () {
     for (let index = 0; index <= 120; index++) {
         SuperBit.Servo(SuperBit.enServo.S6, index)
+        basic.pause(100)
     }
-    basic.showIcon(IconNames.Duck)
-    basic.pause(2000)
 })
