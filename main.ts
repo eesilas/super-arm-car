@@ -34,19 +34,19 @@ function base () {
 function elbow () {
     basic.clearScreen()
     led.plot(0, 2)
-    SuperBit.Servo(SuperBit.enServo.S6, 90)
+    SuperBit.Servo(SuperBit.enServo.S3, 90)
     basic.pause(1000)
     led.plot(1, 2)
-    SuperBit.Servo(SuperBit.enServo.S6, 80)
+    SuperBit.Servo(SuperBit.enServo.S3, 80)
     basic.pause(1000)
     led.plot(2, 2)
-    SuperBit.Servo(SuperBit.enServo.S6, 60)
+    SuperBit.Servo(SuperBit.enServo.S3, 60)
     basic.pause(1000)
     led.plot(3, 2)
-    SuperBit.Servo(SuperBit.enServo.S6, 40)
+    SuperBit.Servo(SuperBit.enServo.S3, 40)
     basic.pause(1000)
     led.plot(4, 2)
-    SuperBit.Servo(SuperBit.enServo.S6, 30)
+    SuperBit.Servo(SuperBit.enServo.S3, 30)
     basic.pause(1000)
 }
 function frontarm () {
@@ -95,7 +95,7 @@ basic.showLeds(`
     . . # . .
     `)
 basic.forever(function () {
-    wristv()
+    elbow()
     basic.showIcon(IconNames.Duck)
     basic.pause(5000)
 })
