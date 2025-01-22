@@ -98,6 +98,7 @@ basic.showLeds(`
     `)
 basic.pause(100)
 SuperBit.Servo(SuperBit.enServo.S3, 90)
+SuperBit.Servo(SuperBit.enServo.S2, 0)
 basic.forever(function () {
     elbow()
     basic.showIcon(IconNames.Duck)
