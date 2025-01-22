@@ -95,7 +95,7 @@ basic.showLeds(`
     . . # . .
     `)
 basic.forever(function () {
-    base()
+    elbow()
     basic.showIcon(IconNames.Duck)
     basic.pause(5000)
 })
