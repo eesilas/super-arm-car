@@ -43,10 +43,10 @@ function elbow () {
     SuperBit.Servo(SuperBit.enServo.S1, 50)
     basic.pause(1000)
     led.plot(3, 2)
-    SuperBit.Servo(SuperBit.enServo.S1, 65)
+    SuperBit.Servo(SuperBit.enServo.S1, 70)
     basic.pause(1000)
     led.plot(4, 2)
-    SuperBit.Servo(SuperBit.enServo.S1, 80)
+    SuperBit.Servo(SuperBit.enServo.S1, 90)
     basic.pause(1000)
 }
 function frontarm () {
