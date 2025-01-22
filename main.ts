@@ -1,7 +1,7 @@
 function base () {
     basic.clearScreen()
     led.plot(0, 3)
-    SuperBit.Servo(SuperBit.enServo.S5, 70)
+    SuperBit.Servo(SuperBit.enServo.S1, 70)
     basic.pause(1000)
     led.plot(1, 3)
     SuperBit.Servo(SuperBit.enServo.S5, 60)
@@ -92,5 +92,7 @@ basic.showLeds(`
     . . # . .
     `)
 basic.forever(function () {
-	
+    base()
+    basic.showIcon(IconNames.Duck)
+    basic.pause(5000)
 })
