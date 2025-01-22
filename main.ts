@@ -34,19 +34,19 @@ function base () {
 function elbow () {
     basic.clearScreen()
     led.plot(0, 2)
-    SuperBit.Servo(SuperBit.enServo.S2, 90)
+    SuperBit.Servo(SuperBit.enServo.S6, 90)
     basic.pause(1000)
     led.plot(1, 2)
-    SuperBit.Servo(SuperBit.enServo.S2, 80)
+    SuperBit.Servo(SuperBit.enServo.S6, 80)
     basic.pause(1000)
     led.plot(2, 2)
-    SuperBit.Servo(SuperBit.enServo.S2, 60)
+    SuperBit.Servo(SuperBit.enServo.S6, 60)
     basic.pause(1000)
     led.plot(3, 2)
-    SuperBit.Servo(SuperBit.enServo.S2, 40)
+    SuperBit.Servo(SuperBit.enServo.S6, 40)
     basic.pause(1000)
     led.plot(4, 2)
-    SuperBit.Servo(SuperBit.enServo.S2, 30)
+    SuperBit.Servo(SuperBit.enServo.S6, 30)
     basic.pause(1000)
 }
 function frontarm () {
@@ -70,6 +70,24 @@ function frontarm () {
 function wrist () {
 	
 }
+function wristh () {
+    basic.clearScreen()
+    led.plot(0, 2)
+    SuperBit.Servo(SuperBit.enServo.S2, 90)
+    basic.pause(1000)
+    led.plot(1, 2)
+    SuperBit.Servo(SuperBit.enServo.S2, 80)
+    basic.pause(1000)
+    led.plot(2, 2)
+    SuperBit.Servo(SuperBit.enServo.S2, 60)
+    basic.pause(1000)
+    led.plot(3, 2)
+    SuperBit.Servo(SuperBit.enServo.S2, 40)
+    basic.pause(1000)
+    led.plot(4, 2)
+    SuperBit.Servo(SuperBit.enServo.S2, 30)
+    basic.pause(1000)
+}
 let range = SuperBit.RGB_Program().range(0, 3)
 basic.showLeds(`
     . # . # .
@@ -79,21 +97,6 @@ basic.showLeds(`
     . . # . .
     `)
 basic.pause(100)
-basic.showLeds(`
-    # . . . #
-    . # . # .
-    . . # . .
-    . . # . .
-    . . # . .
-    `)
-basic.pause(500)
-basic.showLeds(`
-    . # . # .
-    . # . # .
-    . . # . .
-    . . # . .
-    . . # . .
-    `)
 basic.forever(function () {
     elbow()
     basic.showIcon(IconNames.Duck)
