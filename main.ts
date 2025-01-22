@@ -106,7 +106,7 @@ basic.showLeds(`
     . . # . .
     `)
 basic.pause(100)
-SuperBit.Servo(SuperBit.enServo.S3, 90)
+SuperBit.Servo(SuperBit.enServo.S3, 70)
 basic.forever(function () {
     elbow()
     basic.pause(2000)
