@@ -54,7 +54,7 @@ function base () {
     SuperBit.Servo(SuperBit.enServo.S3, 25)
     basic.pause(100)
     led.plot(4, 3)
-    SuperBit.Servo(SuperBit.enServo.S3, 35)
+    SuperBit.Servo(SuperBit.enServo.S3, 60)
     basic.pause(100)
 }
 function base_2 () {
