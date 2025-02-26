@@ -135,6 +135,8 @@ basic.showLeds(`
 basic.pause(100)
 SuperBit.Servo(SuperBit.enServo.S3, 70)
 basic.forever(function () {
+    basic.showIcon(IconNames.Rollerskate)
+    basic.pause(200)
     elbow_2()
     basic.pause(1000)
     base_2()
