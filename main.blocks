@@ -1,6 +1,6 @@
 <xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="BA^9lUZ75,n#y|j6oz-1">range</variable><variable id=",/G824pVL$PFy0mh@#TW">strip</variable><variable id="`HZwSc)POH5r9@@jo@.}">index</variable></variables><block type="pxt-on-start" id="OU3W?-O1{#UFwrn-!3l3" x="-617" y="-146"><statement name="HANDLER"><block type="variables_set" id="PM:C(D=B?3b~4D=HR!xq"><field name="VAR" id="BA^9lUZ75,n#y|j6oz-1">range</field><value name="VALUE"><shadow type="math_number" id="b!J0?T=A9p3:J]Y]8F;r"><field name="NUM">0</field></shadow><block type="neopixel_range" id="?%qJ?sI$6-vi)fOG]U5P"><value name="strip"><block type="SuperBit_RGB_Program" id="hzKLpa;]^6wjHUdG?)$I"></block></value><value name="start"><shadow type="math_number" id="ncon_:%nTpa`u:#!DZ;$"><field name="NUM">0</field></shadow></value><value name="length"><shadow type="math_number" id="G3q3K$4A5V:,T[2f*ICM"><field name="NUM">3</field></shadow></value></block></value><next><block type="device_show_leds" id="8qnVLGe7*$xBnW$MhAH^"><field name="LEDS">`
         . # . # . 
-        . # . # . 
+        . # # # . 
         . . # . . 
         . . # . . 
         . . # . .

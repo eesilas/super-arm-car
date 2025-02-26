@@ -127,7 +127,7 @@ function wristh () {
 let range = SuperBit.RGB_Program().range(0, 3)
 basic.showLeds(`
     . # . # .
-    . # . # .
+    . # # # .
     . . # . .
     . . # . .
     . . # . .
