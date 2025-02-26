@@ -48,13 +48,13 @@ function base () {
     SuperBit.Servo(SuperBit.enServo.S3, 10)
     basic.pause(100)
     led.plot(2, 3)
-    SuperBit.Servo(SuperBit.enServo.S3, 15)
+    SuperBit.Servo(SuperBit.enServo.S3, 45)
     basic.pause(100)
     led.plot(3, 3)
-    SuperBit.Servo(SuperBit.enServo.S3, 25)
+    SuperBit.Servo(SuperBit.enServo.S3, 90)
     basic.pause(100)
     led.plot(4, 3)
-    SuperBit.Servo(SuperBit.enServo.S3, 60)
+    SuperBit.Servo(SuperBit.enServo.S3, 120)
     basic.pause(100)
 }
 function base_2 () {
@@ -85,10 +85,10 @@ function elbow () {
     SuperBit.Servo(SuperBit.enServo.S1, 50)
     basic.pause(100)
     led.plot(3, 2)
-    SuperBit.Servo(SuperBit.enServo.S1, 70)
+    SuperBit.Servo(SuperBit.enServo.S1, 90)
     basic.pause(100)
     led.plot(4, 2)
-    SuperBit.Servo(SuperBit.enServo.S1, 90)
+    SuperBit.Servo(SuperBit.enServo.S1, 110)
     basic.pause(100)
 }
 function frontarm () {
