@@ -1,6 +1,6 @@
 {
     "name": "super arm car",
-    "version": "0.0.16",
+    "version": "0.0.17",
     "description": "",
     "dependencies": {
         "core": "*",
