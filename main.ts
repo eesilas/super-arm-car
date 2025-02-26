@@ -3,6 +3,10 @@ function clamp () {
         SuperBit.Servo(SuperBit.enServo.S6, index)
         basic.pause(100)
     }
+    for (let index = 0; index <= 180; index++) {
+        SuperBit.Servo(SuperBit.enServo.S6, index)
+        basic.pause(100)
+    }
 }
 function wristv () {
     basic.clearScreen()
@@ -19,6 +23,22 @@ function wristv () {
     SuperBit.Servo(SuperBit.enServo.S5, 90)
     basic.pause(100)
 }
+function elbow_2 () {
+    basic.clearScreen()
+    led.plot(0, 2)
+    SuperBit.Servo(SuperBit.enServo.S1, 90)
+    basic.pause(100)
+    led.plot(1, 2)
+    SuperBit.Servo(SuperBit.enServo.S1, 70)
+    basic.pause(100)
+    led.plot(2, 2)
+    SuperBit.Servo(SuperBit.enServo.S1, 50)
+    basic.pause(100)
+    led.plot(3, 2)
+    SuperBit.Servo(SuperBit.enServo.S1, 30)
+    basic.pause(100)
+    led.plot(4, 2)
+}
 function base () {
     basic.clearScreen()
     led.plot(0, 3)
@@ -30,11 +50,27 @@ function base () {
     led.plot(2, 3)
     SuperBit.Servo(SuperBit.enServo.S3, 10)
     basic.pause(100)
-    led.plot(2, 3)
+    led.plot(3, 3)
+    SuperBit.Servo(SuperBit.enServo.S3, 15)
+    basic.pause(100)
+    led.plot(4, 3)
+    SuperBit.Servo(SuperBit.enServo.S3, 20)
+    basic.pause(100)
+}
+function base_2 () {
+    basic.clearScreen()
+    led.plot(0, 3)
+    SuperBit.Servo(SuperBit.enServo.S3, 20)
+    basic.pause(100)
+    led.plot(1, 3)
     SuperBit.Servo(SuperBit.enServo.S3, 15)
     basic.pause(100)
     led.plot(2, 3)
-    SuperBit.Servo(SuperBit.enServo.S3, 20)
+    SuperBit.Servo(SuperBit.enServo.S3, 10)
+    basic.pause(100)
+    led.plot(3, 3)
+    SuperBit.Servo(SuperBit.enServo.S3, 5)
+    led.plot(4, 3)
     basic.pause(100)
 }
 function elbow () {
@@ -99,12 +135,14 @@ basic.showLeds(`
 basic.pause(100)
 SuperBit.Servo(SuperBit.enServo.S3, 70)
 basic.forever(function () {
+    base()
+    basic.pause(1000)
     elbow()
     basic.pause(1000)
-    wristh()
-    basic.pause(2000)
-    wristv()
-    basic.pause(5000)
-    wristh()
-    basic.pause(2000)
+    clamp()
+    basic.pause(1000)
+    elbow_2()
+    basic.pause(1000)
+    base_2()
+    basic.pause(1000)
 })
