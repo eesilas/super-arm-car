@@ -1,11 +1,6 @@
 function clamp () {
-    for (let index = 0; index <= 180; index++) {
+    for (let index = 0; index <= 270; index++) {
         SuperBit.Servo(SuperBit.enServo.S6, index)
-        basic.pause(100)
-    }
-    for (let index = 0; index <= 180; index++) {
-        SuperBit.Servo(SuperBit.enServo.S6, index)
-        basic.pause(100)
     }
 }
 function wristv () {
@@ -145,4 +140,6 @@ basic.forever(function () {
     basic.pause(1000)
     elbow()
     basic.pause(1000)
+    basic.showIcon(IconNames.Silly)
+    clamp()
 })
