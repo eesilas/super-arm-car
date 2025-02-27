@@ -72,6 +72,19 @@ input.onButtonPressed(Button.A, function () {
     SuperBit.enMotors.M4,
     -255
     )
+    basic.pause(500)
+    SuperBit.MotorRunDual(
+    SuperBit.enMotors.M1,
+    0,
+    SuperBit.enMotors.M2,
+    0
+    )
+    SuperBit.MotorRunDual(
+    SuperBit.enMotors.M3,
+    0,
+    SuperBit.enMotors.M4,
+    0
+    )
 })
 function base_2 () {
     basic.clearScreen()
