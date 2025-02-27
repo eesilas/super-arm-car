@@ -59,33 +59,6 @@ function base () {
     SuperBit.Servo(SuperBit.enServo.S3, 105)
     basic.pause(200)
 }
-input.onButtonPressed(Button.A, function () {
-    SuperBit.MotorRunDual(
-    SuperBit.enMotors.M1,
-    255,
-    SuperBit.enMotors.M2,
-    255
-    )
-    SuperBit.MotorRunDual(
-    SuperBit.enMotors.M3,
-    -255,
-    SuperBit.enMotors.M4,
-    -255
-    )
-    basic.pause(500)
-    SuperBit.MotorRunDual(
-    SuperBit.enMotors.M1,
-    0,
-    SuperBit.enMotors.M2,
-    0
-    )
-    SuperBit.MotorRunDual(
-    SuperBit.enMotors.M3,
-    0,
-    SuperBit.enMotors.M4,
-    0
-    )
-})
 function base_2 () {
     basic.clearScreen()
     led.plot(0, 4)
@@ -211,4 +184,29 @@ basic.forever(function () {
     basic.pause(100)
     clamp()
     basic.pause(100)
+    SuperBit.MotorRunDual(
+    SuperBit.enMotors.M1,
+    255,
+    SuperBit.enMotors.M2,
+    255
+    )
+    SuperBit.MotorRunDual(
+    SuperBit.enMotors.M3,
+    -255,
+    SuperBit.enMotors.M4,
+    -255
+    )
+    basic.pause(500)
+    SuperBit.MotorRunDual(
+    SuperBit.enMotors.M1,
+    0,
+    SuperBit.enMotors.M2,
+    0
+    )
+    SuperBit.MotorRunDual(
+    SuperBit.enMotors.M3,
+    0,
+    SuperBit.enMotors.M4,
+    0
+    )
 })
