@@ -19,6 +19,12 @@ function wristv () {
     SuperBit.Servo(SuperBit.enServo.S5, 90)
     basic.pause(100)
 }
+function clamp_2 () {
+    for (let index = 0; index <= 100; index++) {
+        SuperBit.Servo(SuperBit.enServo.S6, 100 - index)
+        basic.pause(100)
+    }
+}
 function elbow_2 () {
     basic.clearScreen()
     led.plot(0, 1)
@@ -146,5 +152,8 @@ basic.forever(function () {
     elbow()
     basic.pause(1000)
     basic.showIcon(IconNames.Silly)
+    elbow_2()
+    basic.pause(100)
     clamp()
+    basic.pause(100)
 })
