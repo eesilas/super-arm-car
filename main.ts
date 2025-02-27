@@ -1,5 +1,5 @@
 function clamp () {
-    for (let index = 0; index <= 200; index++) {
+    for (let index = 0; index <= 100; index++) {
         SuperBit.Servo(SuperBit.enServo.S6, index)
         basic.pause(100)
     }
