@@ -1,6 +1,7 @@
 function clamp () {
     for (let index = 0; index <= 270; index++) {
         SuperBit.Servo(SuperBit.enServo.S6, index)
+        basic.pause(100)
     }
 }
 function wristv () {
@@ -122,8 +123,8 @@ function wristh () {
 let range = SuperBit.RGB_Program().range(0, 3)
 basic.showLeds(`
     . # . # .
+    . # . # .
     . # # # .
-    . . # . .
     . . # . .
     . . # . .
     `)
