@@ -59,6 +59,20 @@ function base () {
     SuperBit.Servo(SuperBit.enServo.S3, 105)
     basic.pause(200)
 }
+input.onButtonPressed(Button.A, function () {
+    SuperBit.MotorRunDual(
+    SuperBit.enMotors.M1,
+    255,
+    SuperBit.enMotors.M2,
+    255
+    )
+    SuperBit.MotorRunDual(
+    SuperBit.enMotors.M3,
+    -255,
+    SuperBit.enMotors.M4,
+    -255
+    )
+})
 function base_2 () {
     basic.clearScreen()
     led.plot(0, 4)
@@ -111,6 +125,34 @@ function frontarm () {
     SuperBit.Servo(SuperBit.enServo.S7, 70)
     basic.pause(1000)
 }
+input.onButtonPressed(Button.AB, function () {
+    SuperBit.MotorRunDual(
+    SuperBit.enMotors.M1,
+    -255,
+    SuperBit.enMotors.M3,
+    -255
+    )
+    SuperBit.MotorRunDual(
+    SuperBit.enMotors.M2,
+    255,
+    SuperBit.enMotors.M4,
+    255
+    )
+})
+input.onButtonPressed(Button.B, function () {
+    SuperBit.MotorRunDual(
+    SuperBit.enMotors.M1,
+    -255,
+    SuperBit.enMotors.M2,
+    -255
+    )
+    SuperBit.MotorRunDual(
+    SuperBit.enMotors.M3,
+    255,
+    SuperBit.enMotors.M4,
+    255
+    )
+})
 function wrist () {
 	
 }
