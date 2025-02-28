@@ -187,6 +187,7 @@ basic.forever(function () {
     basic.showIcon(IconNames.Silly)
     elbow_2()
     basic.pause(100)
+    basic.clearScreen()
     clamp()
     basic.pause(100)
     clamp_2()
