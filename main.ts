@@ -1,6 +1,9 @@
 function clamp () {
     for (let index = 0; index <= 100; index++) {
         SuperBit.Servo(SuperBit.enServo.S6, index)
+        led.toggle(0, 0)
+        led.toggle(1, 0)
+        led.toggle(2, 0)
         basic.pause(100)
     }
 }
@@ -22,6 +25,8 @@ function wristv () {
 function clamp_2 () {
     for (let index = 0; index <= 100; index++) {
         SuperBit.Servo(SuperBit.enServo.S6, 100 - index)
+        led.toggle(3, 0)
+        led.toggle(4, 0)
         basic.pause(100)
     }
 }
