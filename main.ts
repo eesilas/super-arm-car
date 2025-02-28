@@ -189,6 +189,8 @@ basic.forever(function () {
     basic.pause(100)
     clamp()
     basic.pause(100)
+    clamp_2()
+    basic.pause(100)
     SuperBit.MotorRunDual(
     SuperBit.enMotors.M1,
     255,
